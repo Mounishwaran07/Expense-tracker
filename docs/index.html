@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Expense Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Expense Tracker</h2>
+<button onclick="toggleDarkMode()">Dark Mode</button>
+<br><br>
+
+<input type="text" id="category" placeholder="Category">
+
+<input type="number" id="amount" placeholder="Amount">
+
+<button onclick="addExpense()">Add Expense</button>
+
+<br><br>
+
+<input type="text" id="search" placeholder="Search Category" onkeyup="searchExpense()">
+
+<br><br>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Date & Time</th>
+<th>Category</th>
+<th>Amount</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="list">
+
+</tbody>
+
+</table>
+
+<br>
+
+<button onclick="downloadCSV()">Download Report</button>
+
+<h3>Total : ₹<span id="total">0</span></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
